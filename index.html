@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-toggle" id="theme-toggle">
+        <span id="theme-icon">🌞</span>
+    </div>
+    <div class="game-container">
+        <div id="settings">
+            <label for="mode">Mode:</label>
+            <select id="mode">
+                <option value="singleplayer">Singleplayer</option>
+                <option value="multiplayer">Multiplayer</option>
+            </select>
+            <label for="difficulty-level">Difficulty:</label>
+            <select id="difficulty-level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="board-size">Board Size:</label>
+            <select id="board-size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+            <label for="theme">Theme:</label>
+            <select id="theme">
+                <option value="classic">Classic</option>
+                <option value="emoji">Emoji</option>
+                <option value="custom">Custom</option>
+            </select>
+            <label for="sound">Sound:</label>
+            <input type="checkbox" id="sound">
+        </div>
+        <div id="game-info">
+            <div id="turn-info">Player's Turn</div>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+        <div id="board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

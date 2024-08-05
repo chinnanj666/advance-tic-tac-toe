@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-theme .cell.x {
+    color: #4caf50; /* Light green */
+}
+
+.dark-theme .cell.o {
+    color: #f44336; /* Light red */
+}
+
+.cell.x {
+    color: #388e3c; /* Dark green */
+}
+
+.cell.o {
+    color: #d32f2f; /* Dark red */
+}
+
+#board {
+    display: grid;
+    gap: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cell.winner {
+    background-color: yellow;
+    animation: winner 1s ease-in-out infinite;
+}
+
+@keyframes winner {
+    0%, 100% { background-color: yellow; }
+    50% { background-color: #ffc107; }
+}
+
+button, select, input[type="checkbox"] {
+    font-size: 1em;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#settings {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
