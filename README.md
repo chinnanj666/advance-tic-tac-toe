@@ -57,10 +57,11 @@ An enhanced Tic Tac Toe game with multiple features including different difficul
 
 ## Contributing
 
+
 1. Fork the repository.
 2. Create your feature branch:
     ```sh
-    git checkout -b feature/YourFeature
+    git checkout -b feature/YourFeature(your branch name)
     ```
 3. Commit your changes:
     ```sh
